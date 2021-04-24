@@ -3,11 +3,11 @@ A CNN model trained to classify and identify various military aircraft through s
 
 -------------------------------------------------------------------------------------------------
 
-##Abstract
+## Abstract
 
 Today, many military branches around the world are investing in Computer Vision for Intelligence, Surveillance and Reconnaissance (ISR). Some applications related to this field include, recognition of military vehicles in social media [1], recognition of camouflaged military targets [2], and battlefield object detection [3]. Military superpowers such as the United States are investing heavily in AI and Deep Learning, with image recognition as one of the main applications [4]. The main objective of this field is to enhance ISR capabilities. Nowadays, combat and reconnaissance drones are becoming increasingly significant and crucial in modern militaries around the world. One of the crucial elements in UAVs and UCAVs are the imaging capabilities from high altitudes. However, as it stands today, reconnaissance and remote intelligence gathering is still done through satellite imagery. This project focuses on the essentials of how Computer Vision can be used by militaries for ISR purposes.
 
-##**Objective**
+## **Objective**
 
 In this project, we use a Convolutional Neural Network to classify a variety of military aircraft through satellite imagery. The project’s aim is to build a Convolutional Neural Network with the capability to distinguish and accurately classify aircraft through a snapshot of satellite imagery.  Additionally, the model should be able to identify and detect all types of aircraft when presented with a large snapshot of an airbase, as well as classifying snapshots of a single aircraft type. Through the use of training data, the model will be accurate  enough to identify individual aircraft in addition to being scalable to a large dataset.
 
