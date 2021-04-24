@@ -40,30 +40,6 @@ The model was designed based on two crucial aspects, one being  our relatively s
 
 ![Capture](https://user-images.githubusercontent.com/19809069/115973253-880d2a00-a521-11eb-8d4a-64df9310180d.JPG)
 
-
-Conv2D layer (32 filters of shape 3 x 3)- input (120, 120, 3)
-Activation layer - relu
-Max pooling - (shape of 2 x 2)
-
-Conv2D layer (72 filters of shape 3 x 3)
-Activation layer - relu
-Max pooling - (shape of 2 x 2)
-
-Conv2D layer (32 filters of shape 3 x 3)
-Activation layer - relu
-Max pooling - (shape of 2 x 2)
-
-Flatten
-
-Dense layer - (size of 450)
-Activation layer - relu
-Dropout layer - (.65)
-Dense layer (10) - number of categories
-Activation layer - softmax
-Model design
-
-
-
 **Model summary**
 
 ![Capture](https://user-images.githubusercontent.com/19809069/115973258-99563680-a521-11eb-96d1-4c93e491fb84.JPG)
