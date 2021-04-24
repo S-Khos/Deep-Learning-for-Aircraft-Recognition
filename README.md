@@ -19,33 +19,27 @@ We developed a dataset composed of 9 different military aircraft, as well as a d
 
 The aircraft types included in this dataset are:
 
-B-1 620
-B-2 663
-B-52 607
-C-5 616
-C-17 667
-C-130 632
-C-135 616
-E-3 626
-KC-10 638
-BareLand (Background)615
-
+![Capture](https://user-images.githubusercontent.com/19809069/115973276-c1de3080-a521-11eb-885a-4bdfdebb1288.JPG)
 
 **Dataset creation**
 
 Due to the lack of pre-existing publicly accessible datasets on military aircraft, we were forced to create our own through satellite imagery taken by Google Maps. We visited many different air force bases belonging to the United States throughout the world, taking individual snapshots of different types of military aircraft. The specific aircraft belong to the categories shown in the table below. 
 
-
+![Capture](https://user-images.githubusercontent.com/19809069/115973223-58f6b880-a521-11eb-88ca-bd76ed276f21.JPG)
 
 
 To account for abstraction, we decided to augment our dataset using the  ImageDataGenerator function provided by Keras. This function allowed us to take 1 image and create (n*) number of images with different rotations, zoom level and horizontal flips of the same original image. For example, the B-2 image shown above can be flipped or rotated into figure 1, shown below. This method of data augmentation ensures that the dataset is balanced and decreases overfitting in the long run. It accounted for differently orientated images of aircraft taken at random positions and zoom levels.
 
-figure 1 
+![Capture](https://user-images.githubusercontent.com/19809069/115973235-6d3ab580-a521-11eb-9df6-2494bc57a17a.JPG)
+
 
 
 **Convolutional Neural Network model design**
 
 The model was designed based on two crucial aspects, one being  our relatively small dataset and the second was to minimize cross validation loss as much as possible. To avoid overfitting, a relatively small model with less complexity is crucial given a small dataset size. Our convolutional neural network is composed of the following:
+
+![Capture](https://user-images.githubusercontent.com/19809069/115973253-880d2a00-a521-11eb-8d4a-64df9310180d.JPG)
+
 
 Conv2D layer (32 filters of shape 3 x 3)- input (120, 120, 3)
 Activation layer - relu
@@ -72,18 +66,12 @@ Model design
 
 **Model summary**
 
+![Capture](https://user-images.githubusercontent.com/19809069/115973258-99563680-a521-11eb-96d1-4c93e491fb84.JPG)
+
+
 With the help of the hyperparameter tuning  function provided by Keras, we were able to find a model which focused on achieving the highest cross validation accuracy and the lowest cross validation loss value.  The statistics for the model can be seen in Figure 2. The highest cross validation accuracy the model was able to achieve is ~ 91%, with the lowest cross validation accuracy achieved being ~ 0.3322. The training accuracy is ~ 98% and the training loss is ~ 0.0610. The model was compiled with the Adam optimizer with a learning rate of 0.0001 using the sparse categorical cross entropy loss method. The model was fitted with 30 epochs, a batch size of 64 and a validation split of .30.
 
-Figure 2
-
-
-
-
-
-
-
-
-
+![Capture](https://user-images.githubusercontent.com/19809069/115973270-aa06ac80-a521-11eb-956f-ac18f40f731e.JPG)
 
 **Results**
 
