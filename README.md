@@ -13,45 +13,28 @@ In this project, we use a Convolutional Neural Network to classify a variety of 
 
 **Design**
 
-Dataset Description
+**Dataset Description**
 
 We developed a dataset composed of 9 different military aircraft, as well as a dataset for various backgrounds, such as the concrete tarmac of air bases or sandy grounds for certain boneyards and air bases throughout the world. Overall, the dataset is composed of 6,300 images, each being 120 x 120, with each aircraft type containing ~ 610 - 660 images.
 
 The aircraft types included in this dataset are:
 
-Image Type
-Number of Pictures
-B-1 
-620
-B-2 
-663
-B-52 
-607
-C-5 
-616
-C-17 
-667
-C-130 
-632
-C-135 
-616
-E-3 
-626
-KC-10 
-638
-BareLand (Background)
-615
+B-1 620
+B-2 663
+B-52 607
+C-5 616
+C-17 667
+C-130 632
+C-135 616
+E-3 626
+KC-10 638
+BareLand (Background)615
 
 
-Dataset creation
+**Dataset creation**
 
 Due to the lack of pre-existing publicly accessible datasets on military aircraft, we were forced to create our own through satellite imagery taken by Google Maps. We visited many different air force bases belonging to the United States throughout the world, taking individual snapshots of different types of military aircraft. The specific aircraft belong to the categories shown in the table below. 
 
-B-1			B-2			B-52			C-17
-
-C-130			E-3			C-135			KC-10
-
-C-5
 
 
 
@@ -60,7 +43,7 @@ To account for abstraction, we decided to augment our dataset using the  ImageDa
 figure 1 
 
 
-Convolutional Neural Network model design
+**Convolutional Neural Network model design**
 
 The model was designed based on two crucial aspects, one being  our relatively small dataset and the second was to minimize cross validation loss as much as possible. To avoid overfitting, a relatively small model with less complexity is crucial given a small dataset size. Our convolutional neural network is composed of the following:
 
@@ -87,7 +70,7 @@ Model design
 
 
 
-Model summary
+**Model summary**
 
 With the help of the hyperparameter tuning  function provided by Keras, we were able to find a model which focused on achieving the highest cross validation accuracy and the lowest cross validation loss value.  The statistics for the model can be seen in Figure 2. The highest cross validation accuracy the model was able to achieve is ~ 91%, with the lowest cross validation accuracy achieved being ~ 0.3322. The training accuracy is ~ 98% and the training loss is ~ 0.0610. The model was compiled with the Adam optimizer with a learning rate of 0.0001 using the sparse categorical cross entropy loss method. The model was fitted with 30 epochs, a batch size of 64 and a validation split of .30.
 
