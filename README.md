@@ -38,7 +38,7 @@ The model was designed based on two crucial aspects, one being  our relatively s
 
 ![Capture](https://user-images.githubusercontent.com/19809069/115973253-880d2a00-a521-11eb-8d4a-64df9310180d.JPG)
 
-**Model summary**
+### **Model summary**
 
 ![Capture](https://user-images.githubusercontent.com/19809069/115973258-99563680-a521-11eb-96d1-4c93e491fb84.JPG)
 
