@@ -32,8 +32,6 @@ To account for abstraction, we decided to augment our dataset using the  ImageDa
 
 ![Capture](https://user-images.githubusercontent.com/19809069/115973235-6d3ab580-a521-11eb-9df6-2494bc57a17a.JPG)
 
-
-
 **Convolutional Neural Network model design**
 
 The model was designed based on two crucial aspects, one being  our relatively small dataset and the second was to minimize cross validation loss as much as possible. To avoid overfitting, a relatively small model with less complexity is crucial given a small dataset size. Our convolutional neural network is composed of the following:
@@ -53,62 +51,20 @@ With the help of the hyperparameter tuning  function provided by Keras, we were 
 
 We tested the model’s practical capabilities by using the predict function on several wide body snapshots of air force bases around the world. This was done in order to test two main capabilities of the model; the model’s ability to successfully identify and detect any type of aircraft, and its ability to identify the category that the detected aircraft belongs to. The model’s ability to detect aircraft can be seen in Figures 4, 5, 6 , 7. Furthermore, the model’s ability to accurately classify an aircraft can be seen in Figures 8, 9, 10, 11. During our testing phase, we noticed that the model tended to misclassify certain types of aircrafts. Taking a deeper look, we realize that the model can often have a hard time distinguishing between aircraft types with a high degree of similarities. For example, The E-3 and C-135 are both extremely similar aircrafts with more or less the same measurements and features. This means that the model needs to be trained to further identify unique characteristics rather than the general shape of the aircraft, which can be common amongst other aircrafts. This can be achieved through a more complex model, given that we expand on our dataset and improve its quality in terms of pixelation, data augmentation and balancing. 
 
-Figure 8
+![Capture](https://user-images.githubusercontent.com/19809069/115973342-521c7580-a522-11eb-84fc-b7b7aa8812d5.JPG)
 
+![Capture](https://user-images.githubusercontent.com/19809069/115973333-3b761e80-a522-11eb-8fe2-e1f9fb8f1a58.JPG)
 
+![Capture](https://user-images.githubusercontent.com/19809069/115973316-079af900-a522-11eb-8739-a2370ec4ccb5.JPG)
 
+![Capture](https://user-images.githubusercontent.com/19809069/115973323-1d102300-a522-11eb-9a92-c13b67382829.JPG)
 
-
-
-
-
-
-Figure 11
-
-Figure 12
-
-
-
-
-
-
-
-
-
-
-
-
-Figure 4
-
-
-Figure 9 - coded to specifically mark patches with C-130s (4/6 classified accurately)
-
-
-
-
-
-
-
-
-Figure 5
-
-Figure 10 - coded to mark C-130s
-
-Figure 6
-
-
-
-
-
-Figure 7
-
+![Capture](https://user-images.githubusercontent.com/19809069/115973330-2b5e3f00-a522-11eb-9ff2-823d32ee25b2.JPG)
 
 
 **Conclusion**
 
 The biggest take away from this experiment is the quality of the dataset and its significant effect on the model’s practical capabilities. Despite reaching a high cross validation accuracy of ~ 91%, the model can be trained to perform much better in both training and a practical setting. As described earlier in the results analysis, possessing a high quality dataset is crucial and beneficial for the model. The biggest improvement that we can make is to expand our dataset to around 15,000 images, 1,500 images for each category. Each category must include a high quality image with varying degrees of rotation, zoom levels and as well cut off points, where only distinguishable features are exposed. These improvements can drastically improve the accuracy of the model by minimizing misclassifications and generalizing to account for noise encountered in practical use.
-
-
 
 
 **References**
