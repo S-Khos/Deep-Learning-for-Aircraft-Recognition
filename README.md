@@ -3,7 +3,7 @@ A CNN model trained to classify and identify various military aircraft through s
 
 -------------------------------------------------------------------------------------------------
 
-##**Abstract**
+##Abstract
 
 Today, many military branches around the world are investing in Computer Vision for Intelligence, Surveillance and Reconnaissance (ISR). Some applications related to this field include, recognition of military vehicles in social media [1], recognition of camouflaged military targets [2], and battlefield object detection [3]. Military superpowers such as the United States are investing heavily in AI and Deep Learning, with image recognition as one of the main applications [4]. The main objective of this field is to enhance ISR capabilities. Nowadays, combat and reconnaissance drones are becoming increasingly significant and crucial in modern militaries around the world. One of the crucial elements in UAVs and UCAVs are the imaging capabilities from high altitudes. However, as it stands today, reconnaissance and remote intelligence gathering is still done through satellite imagery. This project focuses on the essentials of how Computer Vision can be used by militaries for ISR purposes.
 
