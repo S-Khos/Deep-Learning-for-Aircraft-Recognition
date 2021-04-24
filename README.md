@@ -13,7 +13,7 @@ In this project, we use a Convolutional Neural Network to classify a variety of 
 
 ## Design
 
-**Dataset Description**
+### **Dataset Description**
 
 We developed a dataset composed of 9 different military aircraft, as well as a dataset for various backgrounds, such as the concrete tarmac of air bases or sandy grounds for certain boneyards and air bases throughout the world. Overall, the dataset is composed of 6,300 images, each being 120 x 120, with each aircraft type containing ~ 610 - 660 images.
 
@@ -21,7 +21,7 @@ The aircraft types included in this dataset are:
 
 ![Capture](https://user-images.githubusercontent.com/19809069/115973276-c1de3080-a521-11eb-885a-4bdfdebb1288.JPG)
 
-**Dataset creation**
+### **Dataset creation**
 
 Due to the lack of pre-existing publicly accessible datasets on military aircraft, we were forced to create our own through satellite imagery taken by Google Maps. We visited many different air force bases belonging to the United States throughout the world, taking individual snapshots of different types of military aircraft. The specific aircraft belong to the categories shown in the table below. 
 
@@ -32,7 +32,7 @@ To account for abstraction, we decided to augment our dataset using the  ImageDa
 
 ![Capture](https://user-images.githubusercontent.com/19809069/115973235-6d3ab580-a521-11eb-9df6-2494bc57a17a.JPG)
 
-**Convolutional Neural Network model design**
+### **Convolutional Neural Network model design**
 
 The model was designed based on two crucial aspects, one being  our relatively small dataset and the second was to minimize cross validation loss as much as possible. To avoid overfitting, a relatively small model with less complexity is crucial given a small dataset size. Our convolutional neural network is composed of the following:
 
