@@ -1,4 +1,4 @@
-# Deep-Learning-for-Aircraft-Recognition
+# Deep Learning for Aircraft Recognition
 A CNN model trained to classify and identify various military aircraft through satellite imagery
 https://drive.google.com/drive/folders/1abQQCeZ92jGfF2C1GjnJQW8Mw_Jk9cw2
 
